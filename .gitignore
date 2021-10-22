@@ -1,0 +1,9 @@
+!.keep
+
+.idea/
+**.ignore.js
+**.ignore.json
+**.ignore.sh
+**.ignore.txt
+**.DS_STORE
+

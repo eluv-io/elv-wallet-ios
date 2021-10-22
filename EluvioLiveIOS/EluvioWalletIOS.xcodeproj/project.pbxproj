@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0009C82270AC5F6009F69BC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0009C81270AC5F6009F69BC /* Color.swift */; };
+		B0009C83270AC81A009F69BC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0009C81270AC5F6009F69BC /* Color.swift */; };
+		B0009C84270AC81B009F69BC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0009C81270AC5F6009F69BC /* Color.swift */; };
+		B0009C86270F7E76009F69BC /* nfts_marketplace.json in Resources */ = {isa = PBXBuildFile; fileRef = B0009C85270F7E76009F69BC /* nfts_marketplace.json */; };
+		B0009C87270F7E76009F69BC /* nfts_marketplace.json in Resources */ = {isa = PBXBuildFile; fileRef = B0009C85270F7E76009F69BC /* nfts_marketplace.json */; };
+		B0009C88270F7E76009F69BC /* nfts_marketplace.json in Resources */ = {isa = PBXBuildFile; fileRef = B0009C85270F7E76009F69BC /* nfts_marketplace.json */; };
+		B027DEDE26B911A50041616A /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B027DEDD26B911A50041616A /* WalletView.swift */; };
+		B027DEE026B9122A0041616A /* DiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B027DEDF26B9122A0041616A /* DiscoveryView.swift */; };
+		B027DEE226C235A70041616A /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B027DEE126C235A70041616A /* SignInView.swift */; };
+		B027DEE426C23E8F0041616A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B027DEE326C23E8F0041616A /* MainView.swift */; };
+		B029A1722710EE8400523301 /* marketplaces.json in Resources */ = {isa = PBXBuildFile; fileRef = B029A1712710EE8400523301 /* marketplaces.json */; };
+		B029A1742710EFBD00523301 /* MarketplaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029A1732710EFBC00523301 /* MarketplaceModel.swift */; };
+		B029A1752710EFBD00523301 /* MarketplaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029A1732710EFBC00523301 /* MarketplaceModel.swift */; };
+		B029A1762710EFBD00523301 /* MarketplaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029A1732710EFBC00523301 /* MarketplaceModel.swift */; };
+		B029A1782710F1C300523301 /* SubscriptionsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029A1772710F1C300523301 /* SubscriptionsGrid.swift */; };
+		B029A1792710F1C300523301 /* SubscriptionsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029A1772710F1C300523301 /* SubscriptionsGrid.swift */; };
+		B029A17A2710F1C300523301 /* SubscriptionsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029A1772710F1C300523301 /* SubscriptionsGrid.swift */; };
+		B029A17C2710F80D00523301 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029A17B2710F80D00523301 /* MarketView.swift */; };
+		B029A17D2710F80D00523301 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029A17B2710F80D00523301 /* MarketView.swift */; };
+		B029A17E2710F80D00523301 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029A17B2710F80D00523301 /* MarketView.swift */; };
+		B044AD14269D547F00FD27F3 /* EluvioWalletIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044AD13269D547F00FD27F3 /* EluvioWalletIOSApp.swift */; };
+		B044AD18269D548000FD27F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B044AD17269D548000FD27F3 /* Assets.xcassets */; };
+		B044AD1B269D548000FD27F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B044AD1A269D548000FD27F3 /* Preview Assets.xcassets */; };
+		B044AD20269D548000FD27F3 /* EluvioWalletIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B044AD1E269D548000FD27F3 /* EluvioWalletIOS.xcdatamodeld */; };
+		B044AD2B269D548100FD27F3 /* EluvioLiveIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044AD2A269D548100FD27F3 /* EluvioLiveIOSTests.swift */; };
+		B044AD36269D548100FD27F3 /* EluvioLiveIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044AD35269D548100FD27F3 /* EluvioLiveIOSUITests.swift */; };
+		B044AD44269FCB8200FD27F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044AD43269FCB8200FD27F3 /* ContentView.swift */; };
+		B04D72E1271104E30048A4A4 /* marketplaces.json in Resources */ = {isa = PBXBuildFile; fileRef = B029A1712710EE8400523301 /* marketplaces.json */; };
+		B04D72E2271104E40048A4A4 /* marketplaces.json in Resources */ = {isa = PBXBuildFile; fileRef = B029A1712710EE8400523301 /* marketplaces.json */; };
+		B04D72E4271114690048A4A4 /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04D72E3271114690048A4A4 /* StarsView.swift */; };
+		B04D72E5271114690048A4A4 /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04D72E3271114690048A4A4 /* StarsView.swift */; };
+		B04D72E6271114690048A4A4 /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04D72E3271114690048A4A4 /* StarsView.swift */; };
+		B04D72E8271392B40048A4A4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04D72E7271392B40048A4A4 /* ProfileView.swift */; };
+		B04D72E9271392B40048A4A4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04D72E7271392B40048A4A4 /* ProfileView.swift */; };
+		B04D72EA271392B40048A4A4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04D72E7271392B40048A4A4 /* ProfileView.swift */; };
+		B04D72EC271393A10048A4A4 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04D72EB271393A10048A4A4 /* ProfileModel.swift */; };
+		B04D72ED271393A10048A4A4 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04D72EB271393A10048A4A4 /* ProfileModel.swift */; };
+		B04D72EE271393A10048A4A4 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04D72EB271393A10048A4A4 /* ProfileModel.swift */; };
+		B04D72F02713942F0048A4A4 /* profile.json in Resources */ = {isa = PBXBuildFile; fileRef = B04D72EF2713942F0048A4A4 /* profile.json */; };
+		B04D72F12713942F0048A4A4 /* profile.json in Resources */ = {isa = PBXBuildFile; fileRef = B04D72EF2713942F0048A4A4 /* profile.json */; };
+		B04D72F22713942F0048A4A4 /* profile.json in Resources */ = {isa = PBXBuildFile; fileRef = B04D72EF2713942F0048A4A4 /* profile.json */; };
+		B06BF9BF26C2F57E005FA1EF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06BF9BE26C2F57E005FA1EF /* StoreKit.framework */; };
+		B06BF9C226C4B1B5005FA1EF /* NFTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9C126C4B1B5005FA1EF /* NFTModel.swift */; };
+		B06BF9C426C4BA9D005FA1EF /* NFTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9C326C4BA9D005FA1EF /* NFTView.swift */; };
+		B06BF9C926FE5F84005FA1EF /* nfts.json in Resources */ = {isa = PBXBuildFile; fileRef = B06BF9C826FE5F84005FA1EF /* nfts.json */; };
+		B06BF9CA26FE5F84005FA1EF /* nfts.json in Resources */ = {isa = PBXBuildFile; fileRef = B06BF9C826FE5F84005FA1EF /* nfts.json */; };
+		B06BF9CB26FE5F84005FA1EF /* nfts.json in Resources */ = {isa = PBXBuildFile; fileRef = B06BF9C826FE5F84005FA1EF /* nfts.json */; };
+		B06BF9CF27018542005FA1EF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9CE27018542005FA1EF /* Utils.swift */; };
+		B06BF9D027018542005FA1EF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9CE27018542005FA1EF /* Utils.swift */; };
+		B06BF9D127018542005FA1EF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9CE27018542005FA1EF /* Utils.swift */; };
+		B06BF9D32701879A005FA1EF /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9D22701879A005FA1EF /* TestData.swift */; };
+		B06BF9D42701879A005FA1EF /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9D22701879A005FA1EF /* TestData.swift */; };
+		B06BF9D52701879A005FA1EF /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9D22701879A005FA1EF /* TestData.swift */; };
+		B06BF9D627019203005FA1EF /* NFTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9C126C4B1B5005FA1EF /* NFTModel.swift */; };
+		B06BF9D727019203005FA1EF /* NFTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9C126C4B1B5005FA1EF /* NFTModel.swift */; };
+		B06BF9D82701920A005FA1EF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B027DEE326C23E8F0041616A /* MainView.swift */; };
+		B06BF9D92701920A005FA1EF /* DiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B027DEDF26B9122A0041616A /* DiscoveryView.swift */; };
+		B06BF9DA2701920A005FA1EF /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B027DEE126C235A70041616A /* SignInView.swift */; };
+		B06BF9DB2701920A005FA1EF /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B027DEDD26B911A50041616A /* WalletView.swift */; };
+		B06BF9DC2701920A005FA1EF /* NFTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9C326C4BA9D005FA1EF /* NFTView.swift */; };
+		B06BF9DD2701920B005FA1EF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B027DEE326C23E8F0041616A /* MainView.swift */; };
+		B06BF9DE2701920B005FA1EF /* DiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B027DEDF26B9122A0041616A /* DiscoveryView.swift */; };
+		B06BF9DF2701920B005FA1EF /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B027DEE126C235A70041616A /* SignInView.swift */; };
+		B06BF9E02701920B005FA1EF /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B027DEDD26B911A50041616A /* WalletView.swift */; };
+		B06BF9E12701920B005FA1EF /* NFTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9C326C4BA9D005FA1EF /* NFTView.swift */; };
+		B06BF9E22701921E005FA1EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044AD43269FCB8200FD27F3 /* ContentView.swift */; };
+		B06BF9E32701921F005FA1EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044AD43269FCB8200FD27F3 /* ContentView.swift */; };
+		B06BF9E72701957F005FA1EF /* NFTList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9E62701957F005FA1EF /* NFTList.swift */; };
+		B06BF9E82701957F005FA1EF /* NFTList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9E62701957F005FA1EF /* NFTList.swift */; };
+		B06BF9E92701957F005FA1EF /* NFTList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9E62701957F005FA1EF /* NFTList.swift */; };
+		B06BF9EB27019682005FA1EF /* NFTDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9EA27019682005FA1EF /* NFTDetail.swift */; };
+		B06BF9EC27019682005FA1EF /* NFTDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9EA27019682005FA1EF /* NFTDetail.swift */; };
+		B06BF9ED27019682005FA1EF /* NFTDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9EA27019682005FA1EF /* NFTDetail.swift */; };
+		B06BF9EF2702CCCC005FA1EF /* HViewGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9EE2702CCCC005FA1EF /* HViewGrid.swift */; };
+		B06BF9F02702CCCC005FA1EF /* HViewGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9EE2702CCCC005FA1EF /* HViewGrid.swift */; };
+		B06BF9F12702CCCC005FA1EF /* HViewGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9EE2702CCCC005FA1EF /* HViewGrid.swift */; };
+		B06BF9F327042C98005FA1EF /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9F227042C98005FA1EF /* Header.swift */; };
+		B06BF9F427042C98005FA1EF /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9F227042C98005FA1EF /* Header.swift */; };
+		B06BF9F527042C98005FA1EF /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9F227042C98005FA1EF /* Header.swift */; };
+		B0D28D8627168D0200706E54 /* AchievementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D28D8527168D0200706E54 /* AchievementModel.swift */; };
+		B0D28D8727168D0200706E54 /* AchievementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D28D8527168D0200706E54 /* AchievementModel.swift */; };
+		B0D28D8827168D0200706E54 /* AchievementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D28D8527168D0200706E54 /* AchievementModel.swift */; };
+		B0D28D8A2716954600706E54 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D28D892716954600706E54 /* AchievementsView.swift */; };
+		B0D28D8B2716954600706E54 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D28D892716954600706E54 /* AchievementsView.swift */; };
+		B0D28D8C2716954600706E54 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D28D892716954600706E54 /* AchievementsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B044AD27269D548100FD27F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B044AD08269D547F00FD27F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B044AD0F269D547F00FD27F3;
+			remoteInfo = EluvioLiveIOS;
+		};
+		B044AD32269D548100FD27F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B044AD08269D547F00FD27F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B044AD0F269D547F00FD27F3;
+			remoteInfo = EluvioLiveIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B0009C81270AC5F6009F69BC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B0009C85270F7E76009F69BC /* nfts_marketplace.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = nfts_marketplace.json; sourceTree = "<group>"; };
+		B027DEDD26B911A50041616A /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		B027DEDF26B9122A0041616A /* DiscoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryView.swift; sourceTree = "<group>"; };
+		B027DEE126C235A70041616A /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B027DEE326C23E8F0041616A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B029A1712710EE8400523301 /* marketplaces.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = marketplaces.json; sourceTree = "<group>"; };
+		B029A1732710EFBC00523301 /* MarketplaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceModel.swift; sourceTree = "<group>"; };
+		B029A1772710F1C300523301 /* SubscriptionsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsGrid.swift; sourceTree = "<group>"; };
+		B029A17B2710F80D00523301 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
+		B044AD10269D547F00FD27F3 /* EluvioWalletIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EluvioWalletIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B044AD13269D547F00FD27F3 /* EluvioWalletIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EluvioWalletIOSApp.swift; sourceTree = "<group>"; };
+		B044AD17269D548000FD27F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B044AD1A269D548000FD27F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B044AD1F269D548000FD27F3 /* EluvioLiveIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EluvioLiveIOS.xcdatamodel; sourceTree = "<group>"; };
+		B044AD21269D548000FD27F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B044AD26269D548100FD27F3 /* EluvioWalletIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EluvioWalletIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B044AD2A269D548100FD27F3 /* EluvioLiveIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EluvioLiveIOSTests.swift; sourceTree = "<group>"; };
+		B044AD2C269D548100FD27F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B044AD31269D548100FD27F3 /* EluvioWalletIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EluvioWalletIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B044AD35269D548100FD27F3 /* EluvioLiveIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EluvioLiveIOSUITests.swift; sourceTree = "<group>"; };
+		B044AD37269D548100FD27F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B044AD43269FCB8200FD27F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B04D72E3271114690048A4A4 /* StarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsView.swift; sourceTree = "<group>"; };
+		B04D72E7271392B40048A4A4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B04D72EB271393A10048A4A4 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		B04D72EF2713942F0048A4A4 /* profile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = profile.json; sourceTree = "<group>"; };
+		B06BF9BE26C2F57E005FA1EF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B06BF9C026C2F59A005FA1EF /* EluvioWalletIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EluvioWalletIOS.entitlements; sourceTree = "<group>"; };
+		B06BF9C126C4B1B5005FA1EF /* NFTModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTModel.swift; sourceTree = "<group>"; };
+		B06BF9C326C4BA9D005FA1EF /* NFTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTView.swift; sourceTree = "<group>"; };
+		B06BF9C826FE5F84005FA1EF /* nfts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = nfts.json; sourceTree = "<group>"; };
+		B06BF9CE27018542005FA1EF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B06BF9D22701879A005FA1EF /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		B06BF9E62701957F005FA1EF /* NFTList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTList.swift; sourceTree = "<group>"; };
+		B06BF9EA27019682005FA1EF /* NFTDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTDetail.swift; sourceTree = "<group>"; };
+		B06BF9EE2702CCCC005FA1EF /* HViewGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HViewGrid.swift; sourceTree = "<group>"; };
+		B06BF9F227042C98005FA1EF /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		B0D28D8527168D0200706E54 /* AchievementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementModel.swift; sourceTree = "<group>"; };
+		B0D28D892716954600706E54 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B044AD0D269D547F00FD27F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06BF9BF26C2F57E005FA1EF /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B044AD23269D548100FD27F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B044AD2E269D548100FD27F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B044AD07269D547F00FD27F3 = {
+			isa = PBXGroup;
+			children = (
+				B044AD12269D547F00FD27F3 /* EluvioWalletIOS */,
+				B044AD29269D548100FD27F3 /* EluvioWalletIOSTests */,
+				B044AD34269D548100FD27F3 /* EluvioWalletIOSUITests */,
+				B044AD11269D547F00FD27F3 /* Products */,
+				B06BF9BD26C2F57E005FA1EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B044AD11269D547F00FD27F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B044AD10269D547F00FD27F3 /* EluvioWalletIOS.app */,
+				B044AD26269D548100FD27F3 /* EluvioWalletIOSTests.xctest */,
+				B044AD31269D548100FD27F3 /* EluvioWalletIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B044AD12269D547F00FD27F3 /* EluvioWalletIOS */ = {
+			isa = PBXGroup;
+			children = (
+				B06BF9CD26FE6150005FA1EF /* Views */,
+				B06BF9CC26FE6127005FA1EF /* Model */,
+				B06BF9C726FE5F22005FA1EF /* Test */,
+				B06BF9C026C2F59A005FA1EF /* EluvioWalletIOS.entitlements */,
+				B044AD13269D547F00FD27F3 /* EluvioWalletIOSApp.swift */,
+				B044AD43269FCB8200FD27F3 /* ContentView.swift */,
+				B044AD17269D548000FD27F3 /* Assets.xcassets */,
+				B044AD21269D548000FD27F3 /* Info.plist */,
+				B044AD1E269D548000FD27F3 /* EluvioWalletIOS.xcdatamodeld */,
+				B044AD19269D548000FD27F3 /* Preview Content */,
+				B06BF9CE27018542005FA1EF /* Utils.swift */,
+			);
+			path = EluvioWalletIOS;
+			sourceTree = "<group>";
+		};
+		B044AD19269D548000FD27F3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B044AD1A269D548000FD27F3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B044AD29269D548100FD27F3 /* EluvioWalletIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				B044AD2A269D548100FD27F3 /* EluvioLiveIOSTests.swift */,
+				B044AD2C269D548100FD27F3 /* Info.plist */,
+			);
+			path = EluvioWalletIOSTests;
+			sourceTree = "<group>";
+		};
+		B044AD34269D548100FD27F3 /* EluvioWalletIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B044AD35269D548100FD27F3 /* EluvioLiveIOSUITests.swift */,
+				B044AD37269D548100FD27F3 /* Info.plist */,
+			);
+			path = EluvioWalletIOSUITests;
+			sourceTree = "<group>";
+		};
+		B06BF9BD26C2F57E005FA1EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B06BF9BE26C2F57E005FA1EF /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B06BF9C726FE5F22005FA1EF /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				B06BF9C826FE5F84005FA1EF /* nfts.json */,
+				B06BF9D22701879A005FA1EF /* TestData.swift */,
+				B0009C85270F7E76009F69BC /* nfts_marketplace.json */,
+				B029A1712710EE8400523301 /* marketplaces.json */,
+				B04D72EF2713942F0048A4A4 /* profile.json */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		B06BF9CC26FE6127005FA1EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B06BF9C126C4B1B5005FA1EF /* NFTModel.swift */,
+				B029A1732710EFBC00523301 /* MarketplaceModel.swift */,
+				B04D72EB271393A10048A4A4 /* ProfileModel.swift */,
+				B0D28D8527168D0200706E54 /* AchievementModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B06BF9CD26FE6150005FA1EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B027DEE126C235A70041616A /* SignInView.swift */,
+				B027DEDD26B911A50041616A /* WalletView.swift */,
+				B027DEDF26B9122A0041616A /* DiscoveryView.swift */,
+				B027DEE326C23E8F0041616A /* MainView.swift */,
+				B06BF9C326C4BA9D005FA1EF /* NFTView.swift */,
+				B06BF9E62701957F005FA1EF /* NFTList.swift */,
+				B06BF9EA27019682005FA1EF /* NFTDetail.swift */,
+				B06BF9EE2702CCCC005FA1EF /* HViewGrid.swift */,
+				B06BF9F227042C98005FA1EF /* Header.swift */,
+				B0009C81270AC5F6009F69BC /* Color.swift */,
+				B029A1772710F1C300523301 /* SubscriptionsGrid.swift */,
+				B029A17B2710F80D00523301 /* MarketView.swift */,
+				B04D72E3271114690048A4A4 /* StarsView.swift */,
+				B04D72E7271392B40048A4A4 /* ProfileView.swift */,
+				B0D28D892716954600706E54 /* AchievementsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B044AD0F269D547F00FD27F3 /* EluvioWalletIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B044AD3A269D548100FD27F3 /* Build configuration list for PBXNativeTarget "EluvioWalletIOS" */;
+			buildPhases = (
+				B044AD0C269D547F00FD27F3 /* Sources */,
+				B044AD0D269D547F00FD27F3 /* Frameworks */,
+				B044AD0E269D547F00FD27F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EluvioWalletIOS;
+			productName = EluvioLiveIOS;
+			productReference = B044AD10269D547F00FD27F3 /* EluvioWalletIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B044AD25269D548100FD27F3 /* EluvioWalletIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B044AD3D269D548100FD27F3 /* Build configuration list for PBXNativeTarget "EluvioWalletIOSTests" */;
+			buildPhases = (
+				B044AD22269D548100FD27F3 /* Sources */,
+				B044AD23269D548100FD27F3 /* Frameworks */,
+				B044AD24269D548100FD27F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B044AD28269D548100FD27F3 /* PBXTargetDependency */,
+			);
+			name = EluvioWalletIOSTests;
+			productName = EluvioLiveIOSTests;
+			productReference = B044AD26269D548100FD27F3 /* EluvioWalletIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B044AD30269D548100FD27F3 /* EluvioWalletIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B044AD40269D548100FD27F3 /* Build configuration list for PBXNativeTarget "EluvioWalletIOSUITests" */;
+			buildPhases = (
+				B044AD2D269D548100FD27F3 /* Sources */,
+				B044AD2E269D548100FD27F3 /* Frameworks */,
+				B044AD2F269D548100FD27F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B044AD33269D548100FD27F3 /* PBXTargetDependency */,
+			);
+			name = EluvioWalletIOSUITests;
+			productName = EluvioLiveIOSUITests;
+			productReference = B044AD31269D548100FD27F3 /* EluvioWalletIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B044AD08269D547F00FD27F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B044AD0F269D547F00FD27F3 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					B044AD25269D548100FD27F3 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = B044AD0F269D547F00FD27F3;
+					};
+					B044AD30269D548100FD27F3 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = B044AD0F269D547F00FD27F3;
+					};
+				};
+			};
+			buildConfigurationList = B044AD0B269D547F00FD27F3 /* Build configuration list for PBXProject "EluvioWalletIOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B044AD07269D547F00FD27F3;
+			productRefGroup = B044AD11269D547F00FD27F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B044AD0F269D547F00FD27F3 /* EluvioWalletIOS */,
+				B044AD25269D548100FD27F3 /* EluvioWalletIOSTests */,
+				B044AD30269D548100FD27F3 /* EluvioWalletIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B044AD0E269D547F00FD27F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04D72F02713942F0048A4A4 /* profile.json in Resources */,
+				B06BF9C926FE5F84005FA1EF /* nfts.json in Resources */,
+				B029A1722710EE8400523301 /* marketplaces.json in Resources */,
+				B044AD1B269D548000FD27F3 /* Preview Assets.xcassets in Resources */,
+				B044AD18269D548000FD27F3 /* Assets.xcassets in Resources */,
+				B0009C86270F7E76009F69BC /* nfts_marketplace.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B044AD24269D548100FD27F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04D72F12713942F0048A4A4 /* profile.json in Resources */,
+				B06BF9CA26FE5F84005FA1EF /* nfts.json in Resources */,
+				B04D72E1271104E30048A4A4 /* marketplaces.json in Resources */,
+				B0009C87270F7E76009F69BC /* nfts_marketplace.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B044AD2F269D548100FD27F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04D72F22713942F0048A4A4 /* profile.json in Resources */,
+				B06BF9CB26FE5F84005FA1EF /* nfts.json in Resources */,
+				B04D72E2271104E40048A4A4 /* marketplaces.json in Resources */,
+				B0009C88270F7E76009F69BC /* nfts_marketplace.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B044AD0C269D547F00FD27F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06BF9F327042C98005FA1EF /* Header.swift in Sources */,
+				B0D28D8627168D0200706E54 /* AchievementModel.swift in Sources */,
+				B0D28D8A2716954600706E54 /* AchievementsView.swift in Sources */,
+				B027DEE426C23E8F0041616A /* MainView.swift in Sources */,
+				B029A17C2710F80D00523301 /* MarketView.swift in Sources */,
+				B0009C82270AC5F6009F69BC /* Color.swift in Sources */,
+				B06BF9EB27019682005FA1EF /* NFTDetail.swift in Sources */,
+				B04D72E4271114690048A4A4 /* StarsView.swift in Sources */,
+				B027DEE026B9122A0041616A /* DiscoveryView.swift in Sources */,
+				B06BF9C226C4B1B5005FA1EF /* NFTModel.swift in Sources */,
+				B044AD44269FCB8200FD27F3 /* ContentView.swift in Sources */,
+				B04D72EC271393A10048A4A4 /* ProfileModel.swift in Sources */,
+				B027DEDE26B911A50041616A /* WalletView.swift in Sources */,
+				B044AD20269D548000FD27F3 /* EluvioWalletIOS.xcdatamodeld in Sources */,
+				B06BF9E72701957F005FA1EF /* NFTList.swift in Sources */,
+				B04D72E8271392B40048A4A4 /* ProfileView.swift in Sources */,
+				B06BF9D32701879A005FA1EF /* TestData.swift in Sources */,
+				B06BF9CF27018542005FA1EF /* Utils.swift in Sources */,
+				B06BF9C426C4BA9D005FA1EF /* NFTView.swift in Sources */,
+				B044AD14269D547F00FD27F3 /* EluvioWalletIOSApp.swift in Sources */,
+				B029A1742710EFBD00523301 /* MarketplaceModel.swift in Sources */,
+				B06BF9EF2702CCCC005FA1EF /* HViewGrid.swift in Sources */,
+				B029A1782710F1C300523301 /* SubscriptionsGrid.swift in Sources */,
+				B027DEE226C235A70041616A /* SignInView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B044AD22269D548100FD27F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06BF9DC2701920A005FA1EF /* NFTView.swift in Sources */,
+				B04D72E5271114690048A4A4 /* StarsView.swift in Sources */,
+				B06BF9F02702CCCC005FA1EF /* HViewGrid.swift in Sources */,
+				B029A17D2710F80D00523301 /* MarketView.swift in Sources */,
+				B06BF9EC27019682005FA1EF /* NFTDetail.swift in Sources */,
+				B06BF9D42701879A005FA1EF /* TestData.swift in Sources */,
+				B06BF9DA2701920A005FA1EF /* SignInView.swift in Sources */,
+				B06BF9D92701920A005FA1EF /* DiscoveryView.swift in Sources */,
+				B044AD2B269D548100FD27F3 /* EluvioLiveIOSTests.swift in Sources */,
+				B06BF9D627019203005FA1EF /* NFTModel.swift in Sources */,
+				B0009C83270AC81A009F69BC /* Color.swift in Sources */,
+				B06BF9E22701921E005FA1EF /* ContentView.swift in Sources */,
+				B04D72E9271392B40048A4A4 /* ProfileView.swift in Sources */,
+				B06BF9D82701920A005FA1EF /* MainView.swift in Sources */,
+				B0D28D8B2716954600706E54 /* AchievementsView.swift in Sources */,
+				B029A1752710EFBD00523301 /* MarketplaceModel.swift in Sources */,
+				B04D72ED271393A10048A4A4 /* ProfileModel.swift in Sources */,
+				B06BF9F427042C98005FA1EF /* Header.swift in Sources */,
+				B029A1792710F1C300523301 /* SubscriptionsGrid.swift in Sources */,
+				B06BF9D027018542005FA1EF /* Utils.swift in Sources */,
+				B06BF9E82701957F005FA1EF /* NFTList.swift in Sources */,
+				B06BF9DB2701920A005FA1EF /* WalletView.swift in Sources */,
+				B0D28D8727168D0200706E54 /* AchievementModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B044AD2D269D548100FD27F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06BF9E12701920B005FA1EF /* NFTView.swift in Sources */,
+				B04D72E6271114690048A4A4 /* StarsView.swift in Sources */,
+				B06BF9F12702CCCC005FA1EF /* HViewGrid.swift in Sources */,
+				B029A17E2710F80D00523301 /* MarketView.swift in Sources */,
+				B06BF9ED27019682005FA1EF /* NFTDetail.swift in Sources */,
+				B06BF9D52701879A005FA1EF /* TestData.swift in Sources */,
+				B06BF9DF2701920B005FA1EF /* SignInView.swift in Sources */,
+				B06BF9DE2701920B005FA1EF /* DiscoveryView.swift in Sources */,
+				B044AD36269D548100FD27F3 /* EluvioLiveIOSUITests.swift in Sources */,
+				B06BF9D727019203005FA1EF /* NFTModel.swift in Sources */,
+				B0009C84270AC81B009F69BC /* Color.swift in Sources */,
+				B06BF9E32701921F005FA1EF /* ContentView.swift in Sources */,
+				B04D72EA271392B40048A4A4 /* ProfileView.swift in Sources */,
+				B06BF9DD2701920B005FA1EF /* MainView.swift in Sources */,
+				B0D28D8C2716954600706E54 /* AchievementsView.swift in Sources */,
+				B029A1762710EFBD00523301 /* MarketplaceModel.swift in Sources */,
+				B04D72EE271393A10048A4A4 /* ProfileModel.swift in Sources */,
+				B06BF9F527042C98005FA1EF /* Header.swift in Sources */,
+				B029A17A2710F1C300523301 /* SubscriptionsGrid.swift in Sources */,
+				B06BF9D127018542005FA1EF /* Utils.swift in Sources */,
+				B06BF9E92701957F005FA1EF /* NFTList.swift in Sources */,
+				B06BF9E02701920B005FA1EF /* WalletView.swift in Sources */,
+				B0D28D8827168D0200706E54 /* AchievementModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B044AD28269D548100FD27F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B044AD0F269D547F00FD27F3 /* EluvioWalletIOS */;
+			targetProxy = B044AD27269D548100FD27F3 /* PBXContainerItemProxy */;
+		};
+		B044AD33269D548100FD27F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B044AD0F269D547F00FD27F3 /* EluvioWalletIOS */;
+			targetProxy = B044AD32269D548100FD27F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B044AD38269D548100FD27F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B044AD39269D548100FD27F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B044AD3B269D548100FD27F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EluvioWalletIOS/EluvioWalletIOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"EluvioWalletIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 2KH8KC3MMX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EluvioWalletIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eluvio.wallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B044AD3C269D548100FD27F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EluvioWalletIOS/EluvioWalletIOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"EluvioWalletIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 2KH8KC3MMX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EluvioWalletIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eluvio.wallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B044AD3E269D548100FD27F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KH8KC3MMX;
+				INFOPLIST_FILE = EluvioWalletIOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eluvio.wallet.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EluvioWalletIOS.app/EluvioWalletIOS";
+			};
+			name = Debug;
+		};
+		B044AD3F269D548100FD27F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KH8KC3MMX;
+				INFOPLIST_FILE = EluvioWalletIOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eluvio.wallet.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EluvioWalletIOS.app/EluvioWalletIOS";
+			};
+			name = Release;
+		};
+		B044AD41269D548100FD27F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KH8KC3MMX;
+				INFOPLIST_FILE = EluvioWalletIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eluvio.wallet.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EluvioLiveIOS;
+			};
+			name = Debug;
+		};
+		B044AD42269D548100FD27F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KH8KC3MMX;
+				INFOPLIST_FILE = EluvioWalletIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eluvio.wallet.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EluvioLiveIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B044AD0B269D547F00FD27F3 /* Build configuration list for PBXProject "EluvioWalletIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B044AD38269D548100FD27F3 /* Debug */,
+				B044AD39269D548100FD27F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B044AD3A269D548100FD27F3 /* Build configuration list for PBXNativeTarget "EluvioWalletIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B044AD3B269D548100FD27F3 /* Debug */,
+				B044AD3C269D548100FD27F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B044AD3D269D548100FD27F3 /* Build configuration list for PBXNativeTarget "EluvioWalletIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B044AD3E269D548100FD27F3 /* Debug */,
+				B044AD3F269D548100FD27F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B044AD40269D548100FD27F3 /* Build configuration list for PBXNativeTarget "EluvioWalletIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B044AD41269D548100FD27F3 /* Debug */,
+				B044AD42269D548100FD27F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B044AD1E269D548000FD27F3 /* EluvioWalletIOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B044AD1F269D548000FD27F3 /* EluvioLiveIOS.xcdatamodel */,
+			);
+			currentVersion = B044AD1F269D548000FD27F3 /* EluvioLiveIOS.xcdatamodel */;
+			path = EluvioWalletIOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B044AD08269D547F00FD27F3 /* Project object */;
+}
