@@ -1,0 +1,160 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire",
+        "state": {
+          "branch": null,
+          "revision": "d120af1e8638c7da36c8481fd61a66c0c08dc4fc",
+          "version": "5.4.4"
+        }
+      },
+      {
+        "package": "async-http-client",
+        "repositoryURL": "https://github.com/swift-server/async-http-client.git",
+        "state": {
+          "branch": null,
+          "revision": "170fd536f931c0bffb58f37a53fc238e77f42258",
+          "version": "1.6.4"
+        }
+      },
+      {
+        "package": "Auth0",
+        "repositoryURL": "https://github.com/auth0/Auth0.swift.git",
+        "state": {
+          "branch": null,
+          "revision": "e7feca5a575fe0ac074c14407bdb92e868a31f37",
+          "version": "1.38.0"
+        }
+      },
+      {
+        "package": "Base58Swift",
+        "repositoryURL": "https://github.com/keefertaylor/Base58Swift.git",
+        "state": {
+          "branch": null,
+          "revision": "1c13ea6b07f1584660526f8bde3d4cc150e91acd",
+          "version": "2.1.14"
+        }
+      },
+      {
+        "package": "BigInt",
+        "repositoryURL": "https://github.com/attaswift/BigInt.git",
+        "state": {
+          "branch": null,
+          "revision": "0ed110f7555c34ff468e72e1686e59721f2b0da6",
+          "version": "5.3.0"
+        }
+      },
+      {
+        "package": "JWTDecode",
+        "repositoryURL": "https://github.com/auth0/JWTDecode.swift.git",
+        "state": {
+          "branch": null,
+          "revision": "3cd207fb9e943b6168a117baa3936c823204c2dc",
+          "version": "2.6.3"
+        }
+      },
+      {
+        "package": "PromiseKit",
+        "repositoryURL": "https://github.com/mxcl/PromiseKit.git",
+        "state": {
+          "branch": null,
+          "revision": "00afea5360bf1c02ac83209c2c8991f73b5a4e7d",
+          "version": "6.16.1"
+        }
+      },
+      {
+        "package": "SimpleKeychain",
+        "repositoryURL": "https://github.com/auth0/SimpleKeychain.git",
+        "state": {
+          "branch": null,
+          "revision": "b355c569efcd409e252ccbb500d9fc2713b4d64d",
+          "version": "0.12.5"
+        }
+      },
+      {
+        "package": "swift-log",
+        "repositoryURL": "https://github.com/apple/swift-log.git",
+        "state": {
+          "branch": null,
+          "revision": "5d66f7ba25daf4f94100e7022febf3c75e37a6c7",
+          "version": "1.4.2"
+        }
+      },
+      {
+        "package": "swift-nio",
+        "repositoryURL": "https://github.com/apple/swift-nio.git",
+        "state": {
+          "branch": null,
+          "revision": "addf69cfe60376c325397c8926589415576b1dd1",
+          "version": "2.34.0"
+        }
+      },
+      {
+        "package": "swift-nio-extras",
+        "repositoryURL": "https://github.com/apple/swift-nio-extras.git",
+        "state": {
+          "branch": null,
+          "revision": "f73ca5ee9c6806800243f1ac415fcf82de9a4c91",
+          "version": "1.10.2"
+        }
+      },
+      {
+        "package": "swift-nio-http2",
+        "repositoryURL": "https://github.com/apple/swift-nio-http2.git",
+        "state": {
+          "branch": null,
+          "revision": "326f7f9a8c8c8402e3691adac04911cac9f9d87f",
+          "version": "1.18.4"
+        }
+      },
+      {
+        "package": "swift-nio-ssl",
+        "repositoryURL": "https://github.com/apple/swift-nio-ssl.git",
+        "state": {
+          "branch": null,
+          "revision": "36f6419f2b1b6490a8c0faa840298e28027cefe9",
+          "version": "2.16.3"
+        }
+      },
+      {
+        "package": "swift-nio-transport-services",
+        "repositoryURL": "https://github.com/apple/swift-nio-transport-services.git",
+        "state": {
+          "branch": null,
+          "revision": "e7f5278a26442dc46783ba7e063643d524e414a0",
+          "version": "1.11.3"
+        }
+      },
+      {
+        "package": "SwiftEventBus",
+        "repositoryURL": "https://github.com/cesarferreira/SwiftEventBus",
+        "state": {
+          "branch": null,
+          "revision": "a30ff35e616f507d8a8d122dac32a2150371a87e",
+          "version": "5.1.0"
+        }
+      },
+      {
+        "package": "SwiftJSONRPC",
+        "repositoryURL": "https://github.com/kolyasev/SwiftJSONRPC",
+        "state": {
+          "branch": null,
+          "revision": "ffe1a3bf9f8d60e1cc07ae2c136380bd827f4462",
+          "version": "0.8.0"
+        }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON",
+        "state": {
+          "branch": null,
+          "revision": "2b6054efa051565954e1d2b9da831680026cd768",
+          "version": "4.3.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -35,8 +35,8 @@ struct NFTDetail: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            DetailTitle(title:nft.display_name, nft:nft)
-            AsyncImage(url: URL(string: nft.image)) { image in
+            DetailTitle(title:nft.metadata.displayName, nft:nft)
+            AsyncImage(url: URL(string: nft.metadata.image)) { image in
                 image.resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(height: 300)
@@ -103,7 +103,7 @@ struct NFTDetail: View {
                     HStack(alignment:.center, spacing: 20){
                         VStack{
                             Text("Creator").font(.footnote).foregroundColor(Color.gray)
-                            Text(nft.creator)
+                            Text(nft.metadata.creator)
                                 .font(.system(size: 14))
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color.gray)
@@ -113,7 +113,7 @@ struct NFTDetail: View {
                         
                         VStack{
                             Text("Edition").font(.footnote).foregroundColor(Color.gray)
-                            Text(nft.edition_name)
+                            Text(nft.metadata.editionName)
                                 .font(.system(size: 14))
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color.gray)
@@ -123,7 +123,7 @@ struct NFTDetail: View {
                         
                         VStack{
                             Text("Supply").font(.footnote).foregroundColor(Color.gray)
-                            Text(String(format:"%d/%d",nft.edition_number, nft.total_supply))
+                            Text(String(format:"%d/%d",nft.edition_number, nft.metadata.totalSupply))
                                 .font(.system(size: 14))
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color.gray)
@@ -133,7 +133,7 @@ struct NFTDetail: View {
 
                         VStack{
                             Text("Created At").font(.footnote).foregroundColor(Color.gray)
-                            Text(nft.created_at)
+                            Text(nft.metadata.createdAt)
                                 .font(.system(size: 14))
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color.gray)
@@ -147,7 +147,7 @@ struct NFTDetail: View {
             Spacer()
                 .frame(height: 20.0)
             Text("Description").font(.headline).foregroundColor(.headerForeground)
-            Text(nft.description).foregroundColor(.headerForeground)
+            Text(nft.metadata.description).foregroundColor(.headerForeground)
             Spacer()
         }
         .padding()

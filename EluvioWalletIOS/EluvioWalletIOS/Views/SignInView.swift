@@ -7,11 +7,34 @@
 
 import SwiftUI
 import AuthenticationServices
+import SwiftEventBus
+
+class Subscriber {
+    var view : Any
+    init(view: Any){
+        self.view = view
+    }
+}
 
 struct SignInView: View {
     @Environment(\.presentationMode) var presentationMode
     @Environment(\.colorScheme) var colorScheme
+    @EnvironmentObject var fabric: Fabric
     
+    var subscriber : Subscriber?
+    
+    init(){
+        print("SignInView init()")
+        self.subscriber = Subscriber(view:self)
+        /*print("\(self.fabric)")
+        if(!self.fabric.isLoggedOut){
+            self.presentationMode.wrappedValue.dismiss()
+        }
+         */
+        
+    }
+
+
     var body: some View {
         VStack(alignment: .center, spacing: 30){
             VStack(alignment: .center, spacing:20){
@@ -39,43 +62,22 @@ struct SignInView: View {
             Spacer()
                 .frame(height: 10.0)
             
-            SignInWithAppleButton(
-                // 1.
-                onRequest: { request in
-                    request.requestedScopes = [.fullName, .email]
-                },
-                onCompletion: { result in
-                    switch result {
-                    case .success (let authorization):
-                        if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
-                            print("Authorization successful! :\(appleIDCredential)")
-                            let userId = appleIDCredential.user
-                            let identityToken = appleIDCredential.identityToken
-                            let authCode = appleIDCredential.authorizationCode
-                            let email = appleIDCredential.email
-                            let givenName = appleIDCredential.fullName?.givenName
-                            let familyName = appleIDCredential.fullName?.familyName
-                            let state = appleIDCredential.state
-                            
-                            print("userId :\(userId)")
-                            print("identityToken :\(identityToken)")
-                            print("authCode :\(authCode)")
-                            print("email :\(email)")
-                            print("givenName :\(givenName)")
-                            print("familyName :\(familyName)")
-                            
-                            // Here you have to send the data to the backend and according to the response let the user get into the app.
-                            
-                            presentationMode.wrappedValue.dismiss()
-                        }
-                    case .failure(let error):
-                        print("Authorization failed: " + error.localizedDescription)
-                    }
-                }
-            ).frame(width: 200, height: 50, alignment: .center)
+        
             
             Button(action: {
-                presentationMode.wrappedValue.dismiss()
+                fabric.signIn()
+            }) {
+                Text("Sign In")
+                .font(.headline)
+                .foregroundColor(Color.white)
+                .background(Color.black)
+                .padding()
+                .cornerRadius(15.0)
+            }.frame(width: 200, height: 50, alignment: .center)
+        
+            
+            Button(action: {
+                self.presentationMode.wrappedValue.dismiss()
             }) {
                 Text("Skip")
                 .foregroundColor(Color.headerForeground)

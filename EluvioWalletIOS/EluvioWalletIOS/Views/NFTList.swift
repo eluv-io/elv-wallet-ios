@@ -69,7 +69,7 @@ struct doubleColumn: View {
     var body: some View {
         VStack {
             
-            AsyncImage(url: URL(string: nft.image)) { image in
+            AsyncImage(url: URL(string: nft.metadata.image)) { image in
                 image.resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: width, height: height - 50)
@@ -82,17 +82,17 @@ struct doubleColumn: View {
             
             VStack(alignment: .leading) {
                 HStack {
-                    Text(nft.display_name)
+                    Text(nft.metadata.displayName)
                         .font(.footnote)
                         .fontWeight(.semibold)
                         .foregroundColor(Color.headerForeground)
                         .lineLimit(1)
                     Spacer()
-                    Text(String(format:"%d/%d",nft.edition_number, nft.total_supply))
+                    Text(String(format:"%d/%d",nft.edition_number, nft.metadata.totalSupply))
                         .font(.system(size: 10))
                         .foregroundColor(Color.gray)
                 }
-                Text(nft.edition_name)
+                Text(nft.metadata.editionName)
                     .font(.footnote)
                     .lineLimit(1)
                     .foregroundColor(Color.gray)

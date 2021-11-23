@@ -13,7 +13,7 @@ struct NFTView: View {
 
     var body: some View {
         ZStack(alignment: .topLeading) {
-            AsyncImage(url: URL(string: nft.image)) { image in
+            AsyncImage(url: URL(string: nft.metadata.image)) { image in
                 image.resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(height: 300)
@@ -26,17 +26,17 @@ struct NFTView: View {
             VStack(alignment: .leading, spacing: 7) {
                 HStack {
                     Image(systemName: "a.square.fill").foregroundColor(Color.white.opacity(0.8))
-                    Text(nft.creator)
+                    Text(nft.metadata.creator)
                         .font(.callout)
                         .fontWeight(.semibold)
                         .foregroundColor(Color.white.opacity(0.8))
                         .textCase(.uppercase)
                 }
-                Text(nft.display_name).font(.title)
+                Text(nft.metadata.displayName).font(.title)
                     .foregroundColor(Color.white)
                     .fontWeight(.bold)
                 Spacer()
-                Text(nft.description)
+                Text(nft.metadata.description)
                     .lineLimit(2)
                     .foregroundColor(Color.white)                
             }.padding()

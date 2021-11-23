@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var showLogin = true
     @Environment(\.colorScheme) var colorScheme
+    @EnvironmentObject var fabric: Fabric
+
     
     var body: some View {
-            MainView().preferredColorScheme(colorScheme)
-            .fullScreenCover(isPresented: $showLogin) {
-                Spacer()
-                SignInView().preferredColorScheme(colorScheme)
-                Spacer()
-            }
+        
+        MainView().preferredColorScheme(colorScheme)
+            .fullScreenCover(isPresented: $fabric.isLoggedOut) {
+            Spacer()
+            SignInView()
+                .preferredColorScheme(colorScheme)
+            Spacer()
+        }
     }
 }
 

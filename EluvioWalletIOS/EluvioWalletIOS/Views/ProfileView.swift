@@ -47,6 +47,7 @@ struct ProfileTitle: View {
 
 struct ProfileView: View {
     @Environment(\.colorScheme) var colorScheme
+    @EnvironmentObject var fabric: Fabric
     var nfts : [NFTModel]
     var profile: ProfileModel
     let columns = [
@@ -236,8 +237,17 @@ struct ProfileView: View {
                                 
                                 Divider()
                                     .padding()
-                                Spacer().frame(height:100)
+
                             }
+                            
+                            Button(action: {
+                                fabric.signOut()
+                            }) {
+                                Text("Sign out")
+                                .foregroundColor(Color.headerForeground)
+                            }
+                            .padding([.leading,.trailing])
+                            Spacer().frame(height:100)
                             
                         }
                         .ignoresSafeArea()

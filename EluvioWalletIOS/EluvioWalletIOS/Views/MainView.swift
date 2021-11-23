@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @Environment(\.colorScheme) var colorScheme
+    @EnvironmentObject var fabric: Fabric
     
     var body: some View {
         TabView {
@@ -19,7 +20,7 @@ struct MainView: View {
                  Text("Discover")
               }
             
-            WalletView(nfts: test_NFTs).preferredColorScheme(colorScheme)
+            WalletView(nfts: fabric.wallet).preferredColorScheme(colorScheme)
               .tabItem {
                  Image(systemName: "w.square.fill")
                  Text("Wallet")

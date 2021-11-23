@@ -1,0 +1,235 @@
+//
+//  SignInView.swift
+//  EluvioLiveIOS
+//
+//  Created by Wayne Tran on 2021-08-10.
+//
+
+import SwiftUI
+import AuthenticationServices
+import Auth0
+import AsyncHTTPClient
+
+struct SignInView: View {
+    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.colorScheme) var colorScheme
+    
+    var body: some View {
+        VStack(alignment: .center, spacing: 30){
+            VStack(alignment: .center, spacing:20){
+                Image("wallet_logo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:100)
+                HStack(spacing:5){
+                    Text("ELUV.IO")
+                        .font(.custom("Helvetica Neue", size: 40))
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.headerForeground)
+                        .selfSizeMask(
+                            LinearGradient(
+                                gradient: Gradient(colors: [.purple,.red, .blue]),
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing)
+                        )
+                    Text("Wallet")
+                        .font(.custom("Helvetica Neue", size: 40))
+                        .fontWeight(.bold)
+                }
+            }
+            
+            Spacer()
+                .frame(height: 10.0)
+            
+        
+            SignInWithAppleButton(
+                // 1.
+                onRequest: { request in
+                    request.requestedScopes = [.fullName, .email]
+                },
+                onCompletion: { result in
+                    switch result {
+                    case .success (let authorization):
+                        if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
+                            print("Authorization successful! :\(appleIDCredential)")
+                            let userId = appleIDCredential.user
+                            //let identityToken = appleIDCredential.identityToken
+                            //let authCode = appleIDCredential.authorizationCode
+                            let email = appleIDCredential.email
+                            let givenName = appleIDCredential.fullName?.givenName
+                            let familyName = appleIDCredential.fullName?.familyName
+                            let state = appleIDCredential.state
+                            
+                            print("userId :\(userId)")
+                            //print("identityToken :\(identityToken)")
+                            //print("authCode :\(authCode)")
+                            print("email :\(email)")
+                            print("givenName :\(givenName)")
+                            print("familyName :\(familyName)")
+                            
+                            guard let identityToken = appleIDCredential.identityToken,
+                                let idToken = String(data: identityToken, encoding: .utf8) else {
+                                    print("Problem with the authorizationCode")
+                                    return
+                            }
+                            
+                            print("identityToken :\(idToken)")
+                            
+                            // Here you have to send the data to the backend and according to the response let the user get into the app.
+                            
+                            // Convert Data -> String
+                            guard let authorizationCode = appleIDCredential.authorizationCode,
+                                let authCode = String(data: authorizationCode, encoding: .utf8) else {
+                                    print("Problem with the authorizationCode")
+                                    return
+                            }
+                            print("authCode :\(authCode)")
+                            
+                            
+                            // Auth0 Token Exchange
+                             Auth0
+                                 .authentication()
+                                 .login(appleAuthorizationCode: authCode, fullName: appleIDCredential.fullName).start { result in
+                                     switch result {
+                                     case .success(let credentials):
+                                         print("Auth0 Success: idToken: \(credentials.idToken)")
+                                         print("Auth0 Success: accessToken: \(credentials.accessToken)")
+                                         print("Auth0 Success: tokenType: \(credentials.tokenType)")
+                                         print("Auth0 Success: refreshToken: \(credentials.refreshToken)")
+                                         
+                                         guard let accessToken: String = credentials.accessToken else {return}
+                                         
+                                         
+                                         Auth0
+                                            .authentication()
+                                            .userInfo(withAccessToken: accessToken)
+                                            .start { result in
+                                                switch result {
+                                                case .success(let profile):
+                                                    print("User Profile: \(profile.customClaims)")
+                                                case .failure(let error):
+                                                    print("Failed with \(error)")
+                                                }
+                                            }
+                                         
+                                         do{
+                                             
+                                             let json: [String: Any] = ["ext": [:]]
+
+                                             let jsonData = try? JSONSerialization.data(withJSONObject: json)
+                                             
+                                             //Exchange idToken for a fabric authToken
+                                             let httpClient = HTTPClient(eventLoopGroupProvider: .createNew)
+                                             
+                                             
+                                             let token = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inlwd1ZUbXJkWENkYU5tcjAzVGRDaCJ9.eyJodHRwczovL2F1dGguY29udGVudGZhYnJpYy5pby9nZW8iOnsiY291bnRyeV9jb2RlIjoiQ0EiLCJjb3VudHJ5X2NvZGUzIjoiQ0FOIiwiY291bnRyeV9uYW1lIjoiQ2FuYWRhIiwiY2l0eV9uYW1lIjoiQXJpc3MiLCJsYXRpdHVkZSI6NDMuNTc2NiwibG9uZ2l0dWRlIjotODAuMzU5NywidGltZV96b25lIjoiQW1lcmljYS9Ub3JvbnRvIiwiY29udGluZW50X2NvZGUiOiJOQSJ9LCJuaWNrbmFtZSI6InJoYW9vc2giLCJuYW1lIjoiTmd1eWVuIFRyYW4iLCJwaWN0dXJlIjoiaHR0cHM6Ly9zLmdyYXZhdGFyLmNvbS9hdmF0YXIvMGYyYWQxZDY4MDM5MzA2ZDNkOWFiNzI2ZDE2ZDQyMzU_cz00ODAmcj1wZyZkPWh0dHBzJTNBJTJGJTJGY2RuLmF1dGgwLmNvbSUyRmF2YXRhcnMlMkZudC5wbmciLCJ1cGRhdGVkX2F0IjoiMjAyMS0xMC0yOVQwNDo0MDoyOC4zMzZaIiwiaXNzIjoiaHR0cHM6Ly9wcm9kLWVsdi51cy5hdXRoMC5jb20vIiwic3ViIjoiYXBwbGV8MDAwNTQxLmI4OGE0ZjI0YjdmNTQwOTc5OTI1ZWYyNzYyOWVkNjc5LjAyNTYiLCJhdWQiOiJPMXRyUmFUOG5DcExrZTllMzdQOThDczlZOE5McG9hciIsImlhdCI6MTYzNTQ4MjQyOCwiZXhwIjoxNjM1NTE4NDI4fQ.iT0sOZbhAR1iTeGeDZZY-mKr-503m6Xac6Bg0NcrySjvVx3LzPcJhRHVIWKSpczNCrrAhuogKXiPgXRk21pAAPgcE-mrEZaomuRnCSMoufymmamPkbQeRJybJ9E-_DCOgUvrjdpy3kCOzx1cWHuF9D-_KE5kG6XYs8jadaY-y1JSUbMEnPcwY8zHXZusnLLQLlOBnwB0XBS4svW2jvNBiqGguPSz5RLVjnL934tQhv6EWojOSo6ywthwP1UJ_HSNxByo8r2CE4KFsEjnhK0316Y6_6zlbk_Oc6v--DPaG5KsppXSpx_VfBLi7kGrCOQqs9GsWqDDWkfzhM_vOc2pkQ"
+                                             
+                                             //guard let token: String = credentials.idToken else {return}
+                                             
+                                             /*guard let authorizationCode = appleIDCredential.authorizationCode,
+                                                 let authCode = String(data: authorizationCode, encoding: .utf8) else {
+                                                     print("Problem with the authorizationCode")
+                                                     return
+                                             }*/
+
+                                             print(" exchanging token: \(token)")
+                                             
+                                             var request = try HTTPClient.Request(url: "https://host-66-220-3-86.contentfabric.io/as/wlt/login/jwt", method: .POST)
+                                             request.headers.add(name: "Authorization", value: "Bearer \(token)")
+                                             request.headers.add(name: "Accept", value: "application/json")
+                                             request.headers.add(name: "Content-Type", value: "application/json")
+                                             
+                                             request.body = .data(jsonData!)
+                                              
+                                              
+                                             
+                                             //let request = try HTTPClient.Request(url: "https://google.com")
+                                             
+                                         
+                                             httpClient.execute(request: request).whenComplete { result in
+                                                 switch result {
+                                                 case .failure(let error):
+                                                     print("AS Exchange Failed: \(error)")
+                                                     // process error
+                                                 case .success(let response):
+                                                     if response.status == .ok {
+                                                         // handle response
+                                                         print("AS Exchange Success: \(response)")
+                                                         /*
+                                                         let responseJSON = try? JSONSerialization.jsonObject(with: response.body!, options: [])
+                                                         if let responseJSON = responseJSON as? [String: Any] {
+                                                             print(responseJSON)
+                                                         }
+                                                          */
+                                                         
+                                                     } else {
+                                                         // handle remote error
+                                                     }
+                                                 }
+                                                 
+                                                 do {
+                                                     try? httpClient.syncShutdown()
+                                                 }
+                                             }
+                                         }catch {
+                                             print("Http Request Failed \(error)")
+                                         }
+                                         
+                                     case .failure(let error):
+                                         print("Auth0 credentials failed: \(error)")
+                                     }
+                             }
+                            
+                            presentationMode.wrappedValue.dismiss()
+                        }
+                    case .failure(let error):
+                        print("Authorization failed: " + error.localizedDescription)
+                    }
+                }
+            ).frame(width: 200, height: 50, alignment: .center)
+            
+            
+            /*
+            Button(action: {
+                Auth0
+                    .webAuth()
+                    .scope("openid profile")
+                    .audience("https://prod-elv.us.auth0.com/userinfo")
+                    .start { result in
+                        switch result {
+                        case .failure(let error):
+                            // Handle the error
+                            print("Error: \(error)")
+                        case .success(let credentials):
+                            // Do something with credentials e.g.: save them.
+                            // Auth0 will automatically dismiss the login page
+                            print("Credentials: \(credentials)")
+                        }
+                }
+                
+            }) {
+                Text("Sign In")
+                .font(.headline)
+                .foregroundColor(Color.headerForeground)
+                .background(Color.blue)
+                .padding()
+                .cornerRadius(15.0)
+            }.frame(width: 200, height: 50, alignment: .center)
+            */
+            
+            Button(action: {
+                presentationMode.wrappedValue.dismiss()
+            }) {
+                Text("Skip")
+                .foregroundColor(Color.headerForeground)
+            }
+        }
+        .background(colorScheme == .dark ? .black : .white)
+    }
+}
+
+struct SignInView_Previews: PreviewProvider {
+    static var previews: some View {
+        SignInView().preferredColorScheme(.dark)
+    }
+}

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,33 @@
 		B029A17C2710F80D00523301 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029A17B2710F80D00523301 /* MarketView.swift */; };
 		B029A17D2710F80D00523301 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029A17B2710F80D00523301 /* MarketView.swift */; };
 		B029A17E2710F80D00523301 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029A17B2710F80D00523301 /* MarketView.swift */; };
+		B0366DB6272C748700CBFC5F /* SignInView.swift.bak in Sources */ = {isa = PBXBuildFile; fileRef = B0366DB5272C748700CBFC5F /* SignInView.swift.bak */; };
+		B0366DB7272C748700CBFC5F /* SignInView.swift.bak in Sources */ = {isa = PBXBuildFile; fileRef = B0366DB5272C748700CBFC5F /* SignInView.swift.bak */; };
+		B0366DB8272C748700CBFC5F /* SignInView.swift.bak in Sources */ = {isa = PBXBuildFile; fileRef = B0366DB5272C748700CBFC5F /* SignInView.swift.bak */; };
+		B0366DBB27307B2900CBFC5F /* Fabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0366DBA27307B2900CBFC5F /* Fabric.swift */; };
+		B0366DBC27307B2900CBFC5F /* Fabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0366DBA27307B2900CBFC5F /* Fabric.swift */; };
+		B0366DBD27307B2900CBFC5F /* Fabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0366DBA27307B2900CBFC5F /* Fabric.swift */; };
+		B0366DC0273232A200CBFC5F /* SwiftEventBus in Frameworks */ = {isa = PBXBuildFile; productRef = B0366DBF273232A200CBFC5F /* SwiftEventBus */; };
+		B0366DC22732334E00CBFC5F /* FabricModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0366DC12732334E00CBFC5F /* FabricModels.swift */; };
+		B0366DC32732334E00CBFC5F /* FabricModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0366DC12732334E00CBFC5F /* FabricModels.swift */; };
+		B0366DC42732334E00CBFC5F /* FabricModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0366DC12732334E00CBFC5F /* FabricModels.swift */; };
+		B0366DC627323BDB00CBFC5F /* configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = B0366DC527323BDB00CBFC5F /* configuration.json */; };
+		B0366DC727323BDB00CBFC5F /* configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = B0366DC527323BDB00CBFC5F /* configuration.json */; };
+		B0366DC827323BDB00CBFC5F /* configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = B0366DC527323BDB00CBFC5F /* configuration.json */; };
+		B0366DCA27344F8100CBFC5F /* FabricConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0366DC927344F8100CBFC5F /* FabricConfiguration.swift */; };
+		B0366DCB27344F8100CBFC5F /* FabricConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0366DC927344F8100CBFC5F /* FabricConfiguration.swift */; };
+		B0366DCC27344F8100CBFC5F /* FabricConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0366DC927344F8100CBFC5F /* FabricConfiguration.swift */; };
+		B0366DCE2734C7AC00CBFC5F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0366DCD2734C7AC00CBFC5F /* Constants.swift */; };
+		B0366DCF2734C7AC00CBFC5F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0366DCD2734C7AC00CBFC5F /* Constants.swift */; };
+		B0366DD02734C7AC00CBFC5F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0366DCD2734C7AC00CBFC5F /* Constants.swift */; };
+		B0366DD32740B99700CBFC5F /* Base58Swift in Frameworks */ = {isa = PBXBuildFile; productRef = B0366DD22740B99700CBFC5F /* Base58Swift */; };
+		B0366DD82741AC2600CBFC5F /* RemoteSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0366DD72741AC2600CBFC5F /* RemoteSigner.swift */; };
+		B0366DD92741AC2600CBFC5F /* RemoteSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0366DD72741AC2600CBFC5F /* RemoteSigner.swift */; };
+		B0366DDA2741AC2600CBFC5F /* RemoteSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0366DD72741AC2600CBFC5F /* RemoteSigner.swift */; };
+		B0366DE02742C13300CBFC5F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B0366DDF2742C13300CBFC5F /* Alamofire */; };
+		B0366DE22744328400CBFC5F /* NFTMetaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0366DE12744328400CBFC5F /* NFTMetaResponse.swift */; };
+		B0366DE32744328400CBFC5F /* NFTMetaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0366DE12744328400CBFC5F /* NFTMetaResponse.swift */; };
+		B0366DE42744328400CBFC5F /* NFTMetaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0366DE12744328400CBFC5F /* NFTMetaResponse.swift */; };
 		B044AD14269D547F00FD27F3 /* EluvioWalletIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044AD13269D547F00FD27F3 /* EluvioWalletIOSApp.swift */; };
 		B044AD18269D548000FD27F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B044AD17269D548000FD27F3 /* Assets.xcassets */; };
 		B044AD1B269D548000FD27F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B044AD1A269D548000FD27F3 /* Preview Assets.xcassets */; };
@@ -48,6 +75,9 @@
 		B04D72F02713942F0048A4A4 /* profile.json in Resources */ = {isa = PBXBuildFile; fileRef = B04D72EF2713942F0048A4A4 /* profile.json */; };
 		B04D72F12713942F0048A4A4 /* profile.json in Resources */ = {isa = PBXBuildFile; fileRef = B04D72EF2713942F0048A4A4 /* profile.json */; };
 		B04D72F22713942F0048A4A4 /* profile.json in Resources */ = {isa = PBXBuildFile; fileRef = B04D72EF2713942F0048A4A4 /* profile.json */; };
+		B0621652272722E000B79E3D /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0621651272722E000B79E3D /* Auth0.plist */; };
+		B0621653272722E000B79E3D /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0621651272722E000B79E3D /* Auth0.plist */; };
+		B0621654272722E000B79E3D /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0621651272722E000B79E3D /* Auth0.plist */; };
 		B06BF9BF26C2F57E005FA1EF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06BF9BE26C2F57E005FA1EF /* StoreKit.framework */; };
 		B06BF9C226C4B1B5005FA1EF /* NFTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9C126C4B1B5005FA1EF /* NFTModel.swift */; };
 		B06BF9C426C4BA9D005FA1EF /* NFTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9C326C4BA9D005FA1EF /* NFTView.swift */; };
@@ -86,6 +116,7 @@
 		B06BF9F327042C98005FA1EF /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9F227042C98005FA1EF /* Header.swift */; };
 		B06BF9F427042C98005FA1EF /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9F227042C98005FA1EF /* Header.swift */; };
 		B06BF9F527042C98005FA1EF /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF9F227042C98005FA1EF /* Header.swift */; };
+		B08F509D27230DEE00A7A124 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = B08F509C27230DEE00A7A124 /* Auth0 */; };
 		B0D28D8627168D0200706E54 /* AchievementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D28D8527168D0200706E54 /* AchievementModel.swift */; };
 		B0D28D8727168D0200706E54 /* AchievementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D28D8527168D0200706E54 /* AchievementModel.swift */; };
 		B0D28D8827168D0200706E54 /* AchievementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D28D8527168D0200706E54 /* AchievementModel.swift */; };
@@ -122,6 +153,14 @@
 		B029A1732710EFBC00523301 /* MarketplaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceModel.swift; sourceTree = "<group>"; };
 		B029A1772710F1C300523301 /* SubscriptionsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsGrid.swift; sourceTree = "<group>"; };
 		B029A17B2710F80D00523301 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
+		B0366DB5272C748700CBFC5F /* SignInView.swift.bak */ = {isa = PBXFileReference; lastKnownFileType = text; path = SignInView.swift.bak; sourceTree = "<group>"; };
+		B0366DBA27307B2900CBFC5F /* Fabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fabric.swift; sourceTree = "<group>"; };
+		B0366DC12732334E00CBFC5F /* FabricModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricModels.swift; sourceTree = "<group>"; };
+		B0366DC527323BDB00CBFC5F /* configuration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = configuration.json; sourceTree = "<group>"; };
+		B0366DC927344F8100CBFC5F /* FabricConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricConfiguration.swift; sourceTree = "<group>"; };
+		B0366DCD2734C7AC00CBFC5F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B0366DD72741AC2600CBFC5F /* RemoteSigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSigner.swift; sourceTree = "<group>"; };
+		B0366DE12744328400CBFC5F /* NFTMetaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTMetaResponse.swift; sourceTree = "<group>"; };
 		B044AD10269D547F00FD27F3 /* EluvioWalletIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EluvioWalletIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B044AD13269D547F00FD27F3 /* EluvioWalletIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EluvioWalletIOSApp.swift; sourceTree = "<group>"; };
 		B044AD17269D548000FD27F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,6 +178,7 @@
 		B04D72E7271392B40048A4A4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B04D72EB271393A10048A4A4 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		B04D72EF2713942F0048A4A4 /* profile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = profile.json; sourceTree = "<group>"; };
+		B0621651272722E000B79E3D /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Auth0.plist; sourceTree = "<group>"; };
 		B06BF9BE26C2F57E005FA1EF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B06BF9C026C2F59A005FA1EF /* EluvioWalletIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EluvioWalletIOS.entitlements; sourceTree = "<group>"; };
 		B06BF9C126C4B1B5005FA1EF /* NFTModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTModel.swift; sourceTree = "<group>"; };
@@ -159,7 +199,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0366DE02742C13300CBFC5F /* Alamofire in Frameworks */,
 				B06BF9BF26C2F57E005FA1EF /* StoreKit.framework in Frameworks */,
+				B0366DD32740B99700CBFC5F /* Base58Swift in Frameworks */,
+				B0366DC0273232A200CBFC5F /* SwiftEventBus in Frameworks */,
+				B08F509D27230DEE00A7A124 /* Auth0 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +224,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B0366DB927307AE700CBFC5F /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				B0366DBA27307B2900CBFC5F /* Fabric.swift */,
+				B0366DC12732334E00CBFC5F /* FabricModels.swift */,
+				B0366DC927344F8100CBFC5F /* FabricConfiguration.swift */,
+				B0366DD72741AC2600CBFC5F /* RemoteSigner.swift */,
+				B0366DE12744328400CBFC5F /* NFTMetaResponse.swift */,
+			);
+			path = Fabric;
+			sourceTree = "<group>";
+		};
 		B044AD07269D547F00FD27F3 = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +260,7 @@
 		B044AD12269D547F00FD27F3 /* EluvioWalletIOS */ = {
 			isa = PBXGroup;
 			children = (
+				B0366DB927307AE700CBFC5F /* Fabric */,
 				B06BF9CD26FE6150005FA1EF /* Views */,
 				B06BF9CC26FE6127005FA1EF /* Model */,
 				B06BF9C726FE5F22005FA1EF /* Test */,
@@ -215,6 +272,9 @@
 				B044AD1E269D548000FD27F3 /* EluvioWalletIOS.xcdatamodeld */,
 				B044AD19269D548000FD27F3 /* Preview Content */,
 				B06BF9CE27018542005FA1EF /* Utils.swift */,
+				B0621651272722E000B79E3D /* Auth0.plist */,
+				B0366DC527323BDB00CBFC5F /* configuration.json */,
+				B0366DCD2734C7AC00CBFC5F /* Constants.swift */,
 			);
 			path = EluvioWalletIOS;
 			sourceTree = "<group>";
@@ -280,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				B027DEE126C235A70041616A /* SignInView.swift */,
+				B0366DB5272C748700CBFC5F /* SignInView.swift.bak */,
 				B027DEDD26B911A50041616A /* WalletView.swift */,
 				B027DEDF26B9122A0041616A /* DiscoveryView.swift */,
 				B027DEE326C23E8F0041616A /* MainView.swift */,
@@ -314,6 +375,12 @@
 			dependencies = (
 			);
 			name = EluvioWalletIOS;
+			packageProductDependencies = (
+				B08F509C27230DEE00A7A124 /* Auth0 */,
+				B0366DBF273232A200CBFC5F /* SwiftEventBus */,
+				B0366DD22740B99700CBFC5F /* Base58Swift */,
+				B0366DDF2742C13300CBFC5F /* Alamofire */,
+			);
 			productName = EluvioLiveIOS;
 			productReference = B044AD10269D547F00FD27F3 /* EluvioWalletIOS.app */;
 			productType = "com.apple.product-type.application";
@@ -385,6 +452,15 @@
 				Base,
 			);
 			mainGroup = B044AD07269D547F00FD27F3;
+			packageReferences = (
+				B08F509B27230DEE00A7A124 /* XCRemoteSwiftPackageReference "Auth0.swift" */,
+				B0366DB22729139700CBFC5F /* XCRemoteSwiftPackageReference "async-http-client" */,
+				B0366DBE273232A200CBFC5F /* XCRemoteSwiftPackageReference "SwiftEventBus" */,
+				B0366DD12740B99700CBFC5F /* XCRemoteSwiftPackageReference "Base58Swift" */,
+				B0366DD42741AAC500CBFC5F /* XCRemoteSwiftPackageReference "SwiftJSONRPC" */,
+				B0366DDB2741EEA100CBFC5F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				B0366DDE2742BE2200CBFC5F /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = B044AD11269D547F00FD27F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -403,10 +479,12 @@
 			files = (
 				B04D72F02713942F0048A4A4 /* profile.json in Resources */,
 				B06BF9C926FE5F84005FA1EF /* nfts.json in Resources */,
+				B0366DC627323BDB00CBFC5F /* configuration.json in Resources */,
 				B029A1722710EE8400523301 /* marketplaces.json in Resources */,
 				B044AD1B269D548000FD27F3 /* Preview Assets.xcassets in Resources */,
 				B044AD18269D548000FD27F3 /* Assets.xcassets in Resources */,
 				B0009C86270F7E76009F69BC /* nfts_marketplace.json in Resources */,
+				B0621652272722E000B79E3D /* Auth0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,9 +492,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0621653272722E000B79E3D /* Auth0.plist in Resources */,
 				B04D72F12713942F0048A4A4 /* profile.json in Resources */,
 				B06BF9CA26FE5F84005FA1EF /* nfts.json in Resources */,
 				B04D72E1271104E30048A4A4 /* marketplaces.json in Resources */,
+				B0366DC727323BDB00CBFC5F /* configuration.json in Resources */,
 				B0009C87270F7E76009F69BC /* nfts_marketplace.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,9 +505,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0621654272722E000B79E3D /* Auth0.plist in Resources */,
 				B04D72F22713942F0048A4A4 /* profile.json in Resources */,
 				B06BF9CB26FE5F84005FA1EF /* nfts.json in Resources */,
 				B04D72E2271104E40048A4A4 /* marketplaces.json in Resources */,
+				B0366DC827323BDB00CBFC5F /* configuration.json in Resources */,
 				B0009C88270F7E76009F69BC /* nfts_marketplace.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,16 +523,21 @@
 			files = (
 				B06BF9F327042C98005FA1EF /* Header.swift in Sources */,
 				B0D28D8627168D0200706E54 /* AchievementModel.swift in Sources */,
+				B0366DE22744328400CBFC5F /* NFTMetaResponse.swift in Sources */,
 				B0D28D8A2716954600706E54 /* AchievementsView.swift in Sources */,
 				B027DEE426C23E8F0041616A /* MainView.swift in Sources */,
 				B029A17C2710F80D00523301 /* MarketView.swift in Sources */,
+				B0366DCE2734C7AC00CBFC5F /* Constants.swift in Sources */,
 				B0009C82270AC5F6009F69BC /* Color.swift in Sources */,
+				B0366DBB27307B2900CBFC5F /* Fabric.swift in Sources */,
 				B06BF9EB27019682005FA1EF /* NFTDetail.swift in Sources */,
 				B04D72E4271114690048A4A4 /* StarsView.swift in Sources */,
 				B027DEE026B9122A0041616A /* DiscoveryView.swift in Sources */,
 				B06BF9C226C4B1B5005FA1EF /* NFTModel.swift in Sources */,
+				B0366DCA27344F8100CBFC5F /* FabricConfiguration.swift in Sources */,
 				B044AD44269FCB8200FD27F3 /* ContentView.swift in Sources */,
 				B04D72EC271393A10048A4A4 /* ProfileModel.swift in Sources */,
+				B0366DC22732334E00CBFC5F /* FabricModels.swift in Sources */,
 				B027DEDE26B911A50041616A /* WalletView.swift in Sources */,
 				B044AD20269D548000FD27F3 /* EluvioWalletIOS.xcdatamodeld in Sources */,
 				B06BF9E72701957F005FA1EF /* NFTList.swift in Sources */,
@@ -462,6 +549,8 @@
 				B029A1742710EFBD00523301 /* MarketplaceModel.swift in Sources */,
 				B06BF9EF2702CCCC005FA1EF /* HViewGrid.swift in Sources */,
 				B029A1782710F1C300523301 /* SubscriptionsGrid.swift in Sources */,
+				B0366DD82741AC2600CBFC5F /* RemoteSigner.swift in Sources */,
+				B0366DB6272C748700CBFC5F /* SignInView.swift.bak in Sources */,
 				B027DEE226C235A70041616A /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,13 +564,17 @@
 				B06BF9F02702CCCC005FA1EF /* HViewGrid.swift in Sources */,
 				B029A17D2710F80D00523301 /* MarketView.swift in Sources */,
 				B06BF9EC27019682005FA1EF /* NFTDetail.swift in Sources */,
+				B0366DCB27344F8100CBFC5F /* FabricConfiguration.swift in Sources */,
 				B06BF9D42701879A005FA1EF /* TestData.swift in Sources */,
 				B06BF9DA2701920A005FA1EF /* SignInView.swift in Sources */,
 				B06BF9D92701920A005FA1EF /* DiscoveryView.swift in Sources */,
+				B0366DC32732334E00CBFC5F /* FabricModels.swift in Sources */,
 				B044AD2B269D548100FD27F3 /* EluvioLiveIOSTests.swift in Sources */,
+				B0366DCF2734C7AC00CBFC5F /* Constants.swift in Sources */,
 				B06BF9D627019203005FA1EF /* NFTModel.swift in Sources */,
 				B0009C83270AC81A009F69BC /* Color.swift in Sources */,
 				B06BF9E22701921E005FA1EF /* ContentView.swift in Sources */,
+				B0366DBC27307B2900CBFC5F /* Fabric.swift in Sources */,
 				B04D72E9271392B40048A4A4 /* ProfileView.swift in Sources */,
 				B06BF9D82701920A005FA1EF /* MainView.swift in Sources */,
 				B0D28D8B2716954600706E54 /* AchievementsView.swift in Sources */,
@@ -489,10 +582,13 @@
 				B04D72ED271393A10048A4A4 /* ProfileModel.swift in Sources */,
 				B06BF9F427042C98005FA1EF /* Header.swift in Sources */,
 				B029A1792710F1C300523301 /* SubscriptionsGrid.swift in Sources */,
+				B0366DB7272C748700CBFC5F /* SignInView.swift.bak in Sources */,
+				B0366DE32744328400CBFC5F /* NFTMetaResponse.swift in Sources */,
 				B06BF9D027018542005FA1EF /* Utils.swift in Sources */,
 				B06BF9E82701957F005FA1EF /* NFTList.swift in Sources */,
 				B06BF9DB2701920A005FA1EF /* WalletView.swift in Sources */,
 				B0D28D8727168D0200706E54 /* AchievementModel.swift in Sources */,
+				B0366DD92741AC2600CBFC5F /* RemoteSigner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,13 +601,17 @@
 				B06BF9F12702CCCC005FA1EF /* HViewGrid.swift in Sources */,
 				B029A17E2710F80D00523301 /* MarketView.swift in Sources */,
 				B06BF9ED27019682005FA1EF /* NFTDetail.swift in Sources */,
+				B0366DCC27344F8100CBFC5F /* FabricConfiguration.swift in Sources */,
 				B06BF9D52701879A005FA1EF /* TestData.swift in Sources */,
 				B06BF9DF2701920B005FA1EF /* SignInView.swift in Sources */,
 				B06BF9DE2701920B005FA1EF /* DiscoveryView.swift in Sources */,
+				B0366DC42732334E00CBFC5F /* FabricModels.swift in Sources */,
 				B044AD36269D548100FD27F3 /* EluvioLiveIOSUITests.swift in Sources */,
+				B0366DD02734C7AC00CBFC5F /* Constants.swift in Sources */,
 				B06BF9D727019203005FA1EF /* NFTModel.swift in Sources */,
 				B0009C84270AC81B009F69BC /* Color.swift in Sources */,
 				B06BF9E32701921F005FA1EF /* ContentView.swift in Sources */,
+				B0366DBD27307B2900CBFC5F /* Fabric.swift in Sources */,
 				B04D72EA271392B40048A4A4 /* ProfileView.swift in Sources */,
 				B06BF9DD2701920B005FA1EF /* MainView.swift in Sources */,
 				B0D28D8C2716954600706E54 /* AchievementsView.swift in Sources */,
@@ -519,10 +619,13 @@
 				B04D72EE271393A10048A4A4 /* ProfileModel.swift in Sources */,
 				B06BF9F527042C98005FA1EF /* Header.swift in Sources */,
 				B029A17A2710F1C300523301 /* SubscriptionsGrid.swift in Sources */,
+				B0366DB8272C748700CBFC5F /* SignInView.swift.bak in Sources */,
+				B0366DE42744328400CBFC5F /* NFTMetaResponse.swift in Sources */,
 				B06BF9D127018542005FA1EF /* Utils.swift in Sources */,
 				B06BF9E92701957F005FA1EF /* NFTList.swift in Sources */,
 				B06BF9E02701920B005FA1EF /* WalletView.swift in Sources */,
 				B0D28D8827168D0200706E54 /* AchievementModel.swift in Sources */,
+				B0366DDA2741AC2600CBFC5F /* RemoteSigner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -828,6 +931,88 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B0366DB22729139700CBFC5F /* XCRemoteSwiftPackageReference "async-http-client" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-server/async-http-client.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B0366DBE273232A200CBFC5F /* XCRemoteSwiftPackageReference "SwiftEventBus" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cesarferreira/SwiftEventBus";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		B0366DD12740B99700CBFC5F /* XCRemoteSwiftPackageReference "Base58Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/keefertaylor/Base58Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		B0366DD42741AAC500CBFC5F /* XCRemoteSwiftPackageReference "SwiftJSONRPC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kolyasev/SwiftJSONRPC";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.0;
+			};
+		};
+		B0366DDB2741EEA100CBFC5F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		B0366DDE2742BE2200CBFC5F /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		B08F509B27230DEE00A7A124 /* XCRemoteSwiftPackageReference "Auth0.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/Auth0.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B0366DBF273232A200CBFC5F /* SwiftEventBus */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B0366DBE273232A200CBFC5F /* XCRemoteSwiftPackageReference "SwiftEventBus" */;
+			productName = SwiftEventBus;
+		};
+		B0366DD22740B99700CBFC5F /* Base58Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B0366DD12740B99700CBFC5F /* XCRemoteSwiftPackageReference "Base58Swift" */;
+			productName = Base58Swift;
+		};
+		B0366DDF2742C13300CBFC5F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B0366DDB2741EEA100CBFC5F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		B08F509C27230DEE00A7A124 /* Auth0 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B08F509B27230DEE00A7A124 /* XCRemoteSwiftPackageReference "Auth0.swift" */;
+			productName = Auth0;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B044AD1E269D548000FD27F3 /* EluvioWalletIOS.xcdatamodeld */ = {

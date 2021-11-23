@@ -28,3 +28,34 @@ func loadJsonFile<T: Decodable>(_ filename: String) -> T {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
 }
+
+func HexToBytes(_ string: String) -> [UInt8]? {
+    var str = string
+    print("HexToBytes 1 \(str)")
+    
+    if(string.hasPrefix("0x")){
+        str = String(string.dropFirst(2))
+    }
+    
+    print("HexToBytes 2 \(str)")
+
+    if str.isEmpty{
+        print("Error: Length == 0")
+        return nil
+    }
+    
+    return str.hexaBytes
+}
+
+extension StringProtocol {
+    var hexaData: Data { .init(hexa) }
+    var hexaBytes: [UInt8] { .init(hexa) }
+    private var hexa: UnfoldSequence<UInt8, Index> {
+        sequence(state: startIndex) { startIndex in
+            guard startIndex < self.endIndex else { return nil }
+            let endIndex = self.index(startIndex, offsetBy: 2, limitedBy: self.endIndex) ?? self.endIndex
+            defer { startIndex = endIndex }
+            return UInt8(self[startIndex..<endIndex], radix: 16)
+        }
+    }
+}
