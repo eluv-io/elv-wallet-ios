@@ -37,6 +37,8 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView().preferredColorScheme(.light)
+        MainView()
+            .preferredColorScheme(.light)
+            .environmentObject(Fabric(configUrl: APP_CONFIG.config_url))
     }
 }
